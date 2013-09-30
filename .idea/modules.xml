@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IMDBPNavigator/IMDBPNavigator.iml" filepath="$PROJECT_DIR$/IMDBPNavigator/IMDBPNavigator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMDBPNavigatorProject.iml" filepath="$PROJECT_DIR$/IMDBPNavigatorProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Dev/Android/Libraries/PhotoView-master/sample/sample.iml" filepath="$PROJECT_DIR$/../Dev/Android/Libraries/PhotoView-master/sample/sample.iml" />
+    </modules>
+  </component>
+</project>
+
