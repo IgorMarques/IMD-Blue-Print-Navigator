@@ -4,6 +4,26 @@
     <dataSet config="main" >
         <source path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res" >
             <file
+                name="pic_1"
+                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_1.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="pic_2"
+                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_2.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="pic_3"
+                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_3.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="pic_4"
+                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_4.png"
+                qualifiers=""
+                type="drawable" />
+            <file
                 name="ic_launcher"
                 path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
@@ -101,26 +121,6 @@
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
-            <file
-                name="pic_2"
-                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_2.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="pic_1"
-                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_1.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="pic_3"
-                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_3.png"
-                qualifiers=""
-                type="drawable" />
-            <file
-                name="pic_4"
-                path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/src/main/res/drawable/pic_4.png"
-                qualifiers=""
-                type="drawable" />
         </source>
         <source path="/Users/igormarquessilva/Dropbox/IMDBPNavigatorProject/IMDBPNavigator/build/res/rs/debug" />
     </dataSet>

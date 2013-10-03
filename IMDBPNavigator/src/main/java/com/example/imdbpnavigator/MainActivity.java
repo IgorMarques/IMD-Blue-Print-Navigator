@@ -1,8 +1,11 @@
 package com.example.imdbpnavigator;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.graphics.Matrix;
 import android.graphics.RectF;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -44,9 +47,45 @@ public class MainActivity extends Activity {
         mAttacher.setMaxScale(10);
         mAttacher.setMidScale(5);
 
+        mAttacher.getImageView().setOnClickListener(clickHandler);
 
-        isOpen = true;
     }
+
+    public View.OnClickListener clickHandler = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(MainActivity.this, "Hello World",
+                    Toast.LENGTH_LONG).show();
+        }
+    };
+
+
+    public void showMessage(String title, String msg){
+        AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+
+        builder.setMessage(msg)
+                .setTitle(title);
+
+        AlertDialog dialog = builder.create();
+    }
+
+//    @Override
+//    public boolean onTouchListener(MotionEvent event) {
+//
+//        // calculate inverse matrix
+//        Matrix inverse = new Matrix();
+//        inverse.invert(inverse);
+//        // map touch point from ImageView to image
+//        float[] touchPoint = new float[] {event.getRawX(), event.getRawY()};
+//        inverse.mapPoints(touchPoint);
+//        // touchPoint now contains x and y in image's coordinate system
+//
+//        //Log.d(TAG, "touch coords="+touchPoint[0] + " - " + touchPoint[1]);
+//
+//        showMessage("ALERTA!", "touch coords="+touchPoint[0] + " - " + touchPoint[1]);
+//
+//        return super.onTouchEvent(event);
+//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,9 +116,6 @@ public class MainActivity extends Activity {
                 item = ((TextView)view).getText().toString();
 
                  openListViewItem();
-
-
-
                 }
             });
         }
@@ -96,7 +132,7 @@ public class MainActivity extends Activity {
                 openListViewItem();
 
                 if(scale!=0){
-                    mAttacher.zoomTo(scale, centerY, centerX);
+                    mAttacher.zoomTo(scale, centerX, centerY);
                     mAttacher.update();
                 }
 
