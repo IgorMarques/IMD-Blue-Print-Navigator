@@ -47,17 +47,17 @@ public class MainActivity extends Activity {
         mAttacher.setMaxScale(10);
         mAttacher.setMidScale(5);
 
-        mAttacher.getImageView().setOnClickListener(clickHandler);
+        mAttacher.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
+            @Override
+            public void onPhotoTap(View view, float x, float y) {
+                Toast.makeText(getBaseContext(), "Tap", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        isOpen = true;
 
     }
-
-    public View.OnClickListener clickHandler = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Toast.makeText(MainActivity.this, "Hello World",
-                    Toast.LENGTH_LONG).show();
-        }
-    };
 
 
     public void showMessage(String title, String msg){
@@ -159,6 +159,10 @@ public class MainActivity extends Activity {
     public void onBackPressed(){
 
         if (isOpen){
+            //mAttacher.des();
+            //isOpen = false;
+
+            //mAttacher.getImageView().destroyDrawingCache();
             finish();
             startActivity(getIntent());
         }
