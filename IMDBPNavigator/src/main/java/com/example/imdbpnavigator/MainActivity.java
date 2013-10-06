@@ -47,45 +47,21 @@ public class MainActivity extends Activity {
         mAttacher.setMaxScale(10);
         mAttacher.setMidScale(5);
 
+        int centerX = (imgView.getLeft() + imgView.getRight())/2;
+        int centerY = (imgView.getTop() + imgView.getBottom())/2;
+
+        mAttacher.zoomTo(4,  mAttacher.getDisplayRect().centerX(),  mAttacher.getDisplayRect().centerY());
+
         mAttacher.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
             @Override
             public void onPhotoTap(View view, float x, float y) {
                 Toast.makeText(getBaseContext(), "Tap", Toast.LENGTH_SHORT).show();
-
             }
         });
 
         isOpen = true;
 
     }
-
-
-    public void showMessage(String title, String msg){
-        AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
-
-        builder.setMessage(msg)
-                .setTitle(title);
-
-        AlertDialog dialog = builder.create();
-    }
-
-//    @Override
-//    public boolean onTouchListener(MotionEvent event) {
-//
-//        // calculate inverse matrix
-//        Matrix inverse = new Matrix();
-//        inverse.invert(inverse);
-//        // map touch point from ImageView to image
-//        float[] touchPoint = new float[] {event.getRawX(), event.getRawY()};
-//        inverse.mapPoints(touchPoint);
-//        // touchPoint now contains x and y in image's coordinate system
-//
-//        //Log.d(TAG, "touch coords="+touchPoint[0] + " - " + touchPoint[1]);
-//
-//        showMessage("ALERTA!", "touch coords="+touchPoint[0] + " - " + touchPoint[1]);
-//
-//        return super.onTouchEvent(event);
-//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -159,10 +135,6 @@ public class MainActivity extends Activity {
     public void onBackPressed(){
 
         if (isOpen){
-            //mAttacher.des();
-            //isOpen = false;
-
-            //mAttacher.getImageView().destroyDrawingCache();
             finish();
             startActivity(getIntent());
         }
