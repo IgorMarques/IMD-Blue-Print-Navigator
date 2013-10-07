@@ -11,7 +11,11 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="493d5e1f-56fc-43ef-b7e3-1b671373d52f" name="Default" comment="" />
+    <list default="true" id="493d5e1f-56fc-43ef-b7e3-1b671373d52f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IMDBPNavigator/src/main/java/com/example/imdbpnavigator/MainActivity.java" afterPath="$PROJECT_DIR$/IMDBPNavigator/src/main/java/com/example/imdbpnavigator/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IMDBPNavigator/src/main/java/photoview/PhotoViewAttacher.java" afterPath="$PROJECT_DIR$/IMDBPNavigator/src/main/java/photoview/PhotoViewAttacher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="IMDBPNavigator.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,14 +81,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IMDBPNavigator/src/main/java/com/example/imdbpnavigator/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="26" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.516129" vertical-offset="508" max-vertical-offset="2355">
+            <state line="65" column="110" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.31688803" vertical-offset="808" max-vertical-offset="2460">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1479#1719#0" expanded="true" />
-                <element signature="e#1708#1709#0" expanded="true" />
-                <element signature="e#2256#2267#0" expanded="true" />
-                <element signature="e#2464#2789#0" expanded="true" />
-                <element signature="e#2774#2775#0" expanded="true" />
+                <element signature="e#1753#2123#0" expanded="true" />
+                <element signature="e#2112#2113#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +94,14 @@
       <file leaf-file-name="PhotoViewAttacher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IMDBPNavigator/src/main/java/photoview/PhotoViewAttacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="13785">
-              <folding />
+            <state line="913" column="0" selection-start="30805" selection-end="30805" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="13785">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#5506#5908#0" expanded="true" />
+                <element signature="e#5906#5907#0" expanded="true" />
+                <element signature="e#6535#6567#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -505,6 +512,7 @@
         <option value="$PROJECT_DIR$/IMDBPNavigator/src/main/res/drawable/round_button_background.xml" />
         <option value="$PROJECT_DIR$/IMDBPNavigator/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/IMDBPNavigator/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/IMDBPNavigator/src/main/java/photoview/PhotoViewAttacher.java" />
         <option value="$PROJECT_DIR$/IMDBPNavigator/src/main/java/com/example/imdbpnavigator/MainActivity.java" />
       </list>
     </option>
@@ -539,6 +547,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -741,8 +751,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -800,6 +808,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -825,19 +846,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1091,13 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IMDBPNavigator/src/main/java/photoview/PhotoViewAttacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IMDBPNavigator/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1108,16 +1109,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IMDBPNavigator/src/main/java/photoview/PhotoViewAttacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="913" column="0" selection-start="30805" selection-end="30805" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="13785">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5506#5908#0" expanded="true" />
+            <element signature="e#5906#5907#0" expanded="true" />
+            <element signature="e#6535#6567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IMDBPNavigator/src/main/java/com/example/imdbpnavigator/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.516129" vertical-offset="508" max-vertical-offset="2355">
+        <state line="65" column="110" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.31688803" vertical-offset="808" max-vertical-offset="2460">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1479#1719#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#2256#2267#0" expanded="true" />
-            <element signature="e#2464#2789#0" expanded="true" />
-            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#1753#2123#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,8 +2,15 @@ package com.example.imdbpnavigator;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Matrix;
+import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -55,10 +62,14 @@ public class MainActivity extends Activity {
         mAttacher.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
             @Override
             public void onPhotoTap(View view, float x, float y) {
-                Toast.makeText(getBaseContext(), "Tap", Toast.LENGTH_SHORT).show();
+
+                //and here should go the code to make the circle appear over the x y tapped point of the image
+
+                Toast.makeText(getBaseContext(), "Tap " + x + " " + y, Toast.LENGTH_SHORT).show();
+
+
             }
         });
-
         isOpen = true;
 
     }
