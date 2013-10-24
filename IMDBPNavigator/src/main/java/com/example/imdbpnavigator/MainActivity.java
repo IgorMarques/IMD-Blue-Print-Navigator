@@ -45,8 +45,9 @@ public class MainActivity extends Activity {
 
         int i = 0;
 
-        ImageView imgView;
-        imgView = (ImageView) findViewById(R.id.imageView);
+       ImageView imgView;
+       imgView = (ImageView) findViewById(R.id.imageView);
+
         imgView.setImageResource(myImageList[i]);
 
         mAttacher = new PhotoViewAttacher(imgView);
@@ -63,7 +64,13 @@ public class MainActivity extends Activity {
             @Override
             public void onPhotoTap(View view, float x, float y) {
 
-                //and here should go the code to make the circle appear over the x y tapped point of the image
+                ImageView myImageView = mAttacher.getImageView();
+
+                myImageView.setDrawingCacheEnabled(true);
+
+                myImageView.buildDrawingCache();
+
+                myImageView.setImageBitmap(createImage(myImageView, x, y));
 
                 Toast.makeText(getBaseContext(), "Tap " + x + " " + y, Toast.LENGTH_SHORT).show();
 
@@ -72,6 +79,27 @@ public class MainActivity extends Activity {
         });
         isOpen = true;
 
+    }
+
+
+    public Bitmap createImage(ImageView myImageView, float touchX, float touchY){
+        Bitmap workingBitmap =  ((BitmapDrawable)myImageView.getDrawable()).getBitmap();
+        Bitmap image = workingBitmap.copy(Bitmap.Config.ARGB_8888, true);
+
+        Canvas canvas = new Canvas(image);
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setColor(Color.GREEN);
+
+
+        float radius = touchX*100000;
+
+       // touchX=touchX- image.getWidth() / 2;
+        //touchY=touchY- image.getHeight() / 2;
+
+        canvas.drawCircle(touchX, touchY, radius, paint);
+        System.out.println("Drew a circle at "+touchX+" " + touchY+" with a radius of "+radius+".");
+        return image;
     }
 
     @Override
